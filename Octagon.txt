@@ -1,4 +1,4 @@
-```Java
+```java
 
 /* abstract class that will be extended by the Octagon class */
 public abstract class GeometricObject
