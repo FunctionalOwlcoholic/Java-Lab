@@ -1,5 +1,3 @@
-```java
-
 /* abstract class that will be extended by the Octagon class */
 public abstract class GeometricObject
 {
@@ -95,5 +93,3 @@ public class Octagon extends GeometricObject implements Cloneable, Comparable<Oc
       return false;
    }
 }
-
-```
