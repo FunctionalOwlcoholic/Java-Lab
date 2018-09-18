@@ -39,14 +39,14 @@ public class Octagon extends GeometricObject implements Cloneable, Comparable<Oc
    }
    
    
-   /* returns the area of the octogon */
+   /* returns the area of the octagon */
    public double calculateArea()
    {
       return (2 + 4/Math.sqrt(2) ) * sideLength * sideLength;
    }
    
    
-   /* returns the perimeter of the octogon */
+   /* returns the perimeter of the octagon */
    public double calculatePerimeter()
    {
       return sideLength * 8;
