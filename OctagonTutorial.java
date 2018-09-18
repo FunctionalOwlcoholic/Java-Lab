@@ -27,7 +27,8 @@ public abstract class GeometricObject
    The Comparable interface declares the abstract method: public int compareTo(Object)
    The Cloneable interface declares the abstract method: public Object clone()
    
-   When implementing the Comparable interface, you must add <Octagon> which is a type parameter, it allows you to use this class as a type
+   When implementing the Comparable interface, you must add <Octagon> which is a type parameter,
+   it allows you to use this class as a type
 */
 public class Octagon extends GeometricObject implements Cloneable, Comparable<Octagon>
 {
