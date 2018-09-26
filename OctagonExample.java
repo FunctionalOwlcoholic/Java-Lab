@@ -6,7 +6,7 @@ public abstract class GeometricObject
    protected double sideLength;
    
    
-   //abstract classes can also have constructors in case you didn't know
+   //abstract classes can also have non-abstract constructors
    public GeometricObject(int numberOfSides, double sideLength)
    {
       //the keyword 'this' allows us to use the same variable name in the parameter and also refer to the members in 'this' class
@@ -80,7 +80,7 @@ public class Octagon extends GeometricObject implements Cloneable, Comparable<Oc
    
    
    /* wrapper method for compareTo() that returns a boolean instead of an integer
-   
+         
       the instructions for this lab mention that the Octagon comparison method should return true or false, however
       the compareTo() method only returns int and you cannot change the return type by overriding it,
       so this method is just a "wrapper" method for the previous method
