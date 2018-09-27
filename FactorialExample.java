@@ -1,4 +1,3 @@
-
 public class FactorialExample
 {
    public static void main(String[] args)
@@ -8,7 +7,8 @@ public class FactorialExample
       {
          System.out.println(i + "! = " + recursiveFactorial(i));
       }
-      System.out.println("\nIterative:");
+      System.out.println();
+      System.out.println("Iterative:");
       for (int i = 0; i < 13; i++)
       {
          System.out.println(i + "! = " + iterativeFactorial(i));
