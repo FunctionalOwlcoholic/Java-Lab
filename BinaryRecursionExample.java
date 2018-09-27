@@ -1,4 +1,3 @@
-
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -7,31 +6,27 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.paint.Color;
 import java.util.Random;
 
-public class BinaryRecursion extends Application
+public class BinaryRecursionExample extends Application
 {
    @Override
    public void start(Stage stage)
    {
       Pane pane = new Pane();
-      createBinaryRecursiveRectangle(pane, new Random(), 10, 40, 0, 1000);
+      createBinaryRecursiveRectangle(pane, new Random(), 32, 0, 0, 1024);
       stage.setScene(new Scene(pane));
       stage.setTitle("Hello Binary Recursion");
-      stage.setResizable(false);
       stage.show();
    }
    
-   public static void createBinaryRecursiveRectangle()
-   
-   private static void createBinaryRecursiveRectangle(Pane pane, Random random, int repeat, int height, int begin, int end)
+   public static void createBinaryRecursiveRectangle(Pane pane, Random random, int height, int top, int left, int right)
    {
-      Rectangle rectangle = new Rectangle(begin, repeat * height, end - begin, height);
+      Rectangle rectangle = new Rectangle(left, top, right - left, height);
       rectangle.setFill(Color.color(random.nextFloat(), random.nextFloat(), random.nextFloat()));
       pane.getChildren().add(rectangle);
-      
-      if (--repeat > 0)
+      if (right - left > 1)
       {
-         createBinaryRecursiveRectangle(pane, random, repeat, height, begin, (end - begin) / 2 + begin);
-         createBinaryRecursiveRectangle(pane, random, repeat, height, (end - begin) / 2 + begin, end);
+         createBinaryRecursiveRectangle(pane, random, height, top + height, left, (right - left) / 2 + left);
+         createBinaryRecursiveRectangle(pane, random, height, top + height, (right - left) / 2 + left, right);
       }
    }
 }
