@@ -20,8 +20,8 @@ public class BindingExample extends Application
             Button button = new Button();
             
             // bindings
-            button.prefWidthProperty().bind(rootPane.widthProperty());
-            button.prefHeightProperty().bind(rootPane.heightProperty());
+            button.prefWidthProperty().bind(rootPane.widthProperty().divide(3));
+            button.prefHeightProperty().bind(rootPane.heightProperty().divide(3));
             
             rootPane.add(button, j, i);
          }
