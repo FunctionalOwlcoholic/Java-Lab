@@ -30,7 +30,7 @@ public class BindingExample extends Application
       }
       
       // main scene
-      Scene mainScene = new Scene(rootPane, 640, 480);
+      Scene mainScene = new Scene(rootPane);
       
       // main stage
       mainStage.setScene(mainScene);
