@@ -11,7 +11,6 @@ public class BindingExample extends Application
    {
       // root pane
       GridPane rootPane = new GridPane();
-      rootPane.setMinSize(150, 150);
       
       // buttons
       for (int i = 0; i < 3; i++)
@@ -34,6 +33,8 @@ public class BindingExample extends Application
       
       // main stage
       mainStage.setScene(mainScene);
+      mainStage.setMinWidth(150);
+      mainStage.setMinHeight(150);
       mainStage.setTitle("Hello Binding");
       mainStage.show();
    }
