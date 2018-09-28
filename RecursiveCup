@@ -24,7 +24,6 @@ public class RecursiveCup extends Application
       Rectangle rectangle = new Rectangle(left, top, right - left, height);
       rectangle.setFill(image);
       pane.getChildren().add(rectangle);
-      
       if (right - left > 1)
       {
          createBinaryRecursiveRectangle(pane, image, height, top + height, left, (right - left) / 2 + left);
