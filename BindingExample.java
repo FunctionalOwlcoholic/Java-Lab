@@ -18,7 +18,7 @@ public class BindingExample extends Application
          for (int j = 0; j < 3; j++)
          {
             Button button = new Button();
-            button.setMinSize(50, 50);
+            button.setMinSize(100, 100);
             
             // bindings
             button.prefWidthProperty().bind(rootPane.widthProperty());
@@ -33,8 +33,8 @@ public class BindingExample extends Application
       
       // main stage
       mainStage.setScene(mainScene);
-      mainStage.setMinWidth(150);
-      mainStage.setMinHeight(150);
+      mainStage.setMinWidth(300);
+      mainStage.setMinHeight(300);
       mainStage.setTitle("Hello Binding");
       mainStage.show();
    }
