@@ -18,7 +18,6 @@ public class BindingExample extends Application
          for (int j = 0; j < 3; j++)
          {
             Button button = new Button();
-            button.setMinSize(100, 100);
             
             // bindings
             button.prefWidthProperty().bind(rootPane.widthProperty());
