@@ -3,8 +3,8 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.paint.ImagePattern;
 import javafx.scene.image.Image;
+import javafx.scene.paint.ImagePattern;
 
 public class RecursiveCup extends Application
 {
