@@ -1,4 +1,4 @@
-// to convert a positive integer n into a number with base b
+// to convert a positive integer n into a new number with base b
 // you must divide the original number n by its new base b and look at the quotient and remainder
 
 // quotient = n / b
