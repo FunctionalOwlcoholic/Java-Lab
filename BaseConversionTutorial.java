@@ -6,7 +6,8 @@
 
 // the value of the remainder represents the first symbol in our new number
 // in the decimal system (base 10) we only have 10 different symbols (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-// if the value of the remainder requires two symbols, like 10 for instance, then we can denote that value as a single symbol such as "A"
+// if the value of the remainder requires two symbols, like 10 for instance,
+// then we can denote that value as a single symbol such as "A"
 // thus, 10 = A, 11 = B, 12 = C, and so on
 
 // now that we have taken the remainder away from the original number and stored it somewhere
@@ -31,5 +32,5 @@
 
 // Hints:
 // quotient == 0 would be the "base case" in a recursive method because it ends the cycle
-// you can store the remainders in an int[] array and have a separate toString() or print() methods that looks up the symbols
-// alternatively you can store the remainders in a string and look up the symbols during each recursive call
+// you can store the remainders in an int[] array and have a separate toString() or print() method that looks up the symbols
+// alternatively, you can store the remainders in a string and look up the symbols during each recursive call
