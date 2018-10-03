@@ -74,7 +74,6 @@ public class Calculator extends Application // all javafx programs will start wi
                                                     // typically "i" is row, and "j" is columns
                                                     // so remember to order them correctly for this method
             
-            
             // button event - each button will have an event that either appends text or solves the math expression
             if (numpadStr[i][j].equals("="))
             {
