@@ -6,7 +6,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.paint.Color;
 import java.util.Random;
 
-public class BinaryRecursionExample extends Application
+public class BinaryRecursion extends Application
 {
    @Override
    public void start(Stage stage)
