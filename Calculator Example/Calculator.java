@@ -1,4 +1,3 @@
-
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -121,5 +120,5 @@ public class Calculator extends Application // all javafx programs will start wi
       mainStage.setScene(mainScene); // add the scene to the stage
       mainStage.setTitle("Hello Calculator");
       mainStage.show(); // finally you show the window to the user, this should be called after you finish making a usable window
-   }   
+   }
 }
