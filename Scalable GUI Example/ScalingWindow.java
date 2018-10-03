@@ -4,7 +4,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.scene.control.Button;
 
-public class BindingExample extends Application
+public class ScalingWindow extends Application
 {
    @Override
    public void start(Stage mainStage)
@@ -19,7 +19,7 @@ public class BindingExample extends Application
          {
             Button button = new Button();
             
-            // bindings
+            // binding properties
             button.prefWidthProperty().bind(rootPane.widthProperty().divide(3));
             button.prefHeightProperty().bind(rootPane.heightProperty().divide(3));
             
