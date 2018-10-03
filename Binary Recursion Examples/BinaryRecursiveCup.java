@@ -6,7 +6,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 
-public class RecursiveCup extends Application
+public class BinaryRecursiveCup extends Application
 {
    @Override
    public void start(Stage stage)
