@@ -25,7 +25,7 @@ import javafx.scene.control.Button;
    since this is just an example for a calculator, it lacks some functionality and error checking
    this was all done in a single method but i don't recommend doing that for your actual program
 */
-public class CalcExample extends Application // all javafx programs will start with a class that extends Application
+public class Calculator extends Application // all javafx programs will start with a class that extends Application
 {
    @Override // optionally use the @Override annotation as it provides better compiler error messages when overriding methods
    public void start(Stage mainStage) // this start method from the Application class will replace the main method
