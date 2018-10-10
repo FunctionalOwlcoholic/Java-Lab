@@ -35,24 +35,25 @@
 */
 public class LinkedListQueue
 {
-   class Node
+   class Node // a nested class will be the node of our linked list
    {
-      String data;
+      String data; // the node holds whatever data you want, for this example we are using a string
       
-      Node next = null;
+      Node next = null; // this node is for a doubly linked list we have keep reference the next and previous node
       Node prev = null;
       
-      Node(String data)
+      Node(String data) // a constructor that initilizes whatever data you have in the node
       {
          this.data = data;
       }
    }
    
    
-   Node head = null;
+   Node head = null; // since this is a queue data structure, we need access to the first and last node in the linked list
    Node tail = null;
    
    
+   /* adds a node to the end of the linked list */
    public void enqueue(String data)
    {
       Node newNode = new Node(data);
@@ -72,6 +73,7 @@ public class LinkedListQueue
    }
    
    
+   /* removes a node from the beginning of the linked list and returns the data it held */
    public String dequeue()
    {
       if (head == null)
