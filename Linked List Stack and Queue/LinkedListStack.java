@@ -1,5 +1,5 @@
 /*
-   a 'linked list' is a data structure that consist of a sequence nodes
+   a 'linked list' is a data structure that consist of a sequence of nodes
    each 'node' has access to the next node, and or previous node as well as whatever data you want to store in them
    
    in a 'singly linked list' each node only has access to the 'next node'
@@ -15,7 +15,7 @@
    }
    
    when we use a linked list, we only keep reference of the first node, and or last node in the linked list
-   the first node in a linked list is refered to as the 'head' and the last is called the 'tail'
+   the first node in a linked list is referred to as the 'head' and the last node is called the 'tail'
    to traverse through a linked list we start at either the 'head' or the 'tail' and loop through each node
    
    a 'stack data structure' can be implemented with a 'singly linked list'
@@ -31,7 +31,6 @@
    pop 'F'   <-   [A, B, C, D, E]
    
    pop 'A'     <-    [B, C, D, E]
-   
 */
 public class LinkedListStack
 {
