@@ -34,11 +34,11 @@
 */
 public class LinkedListStack
 {
-   class Node // a nested class that will be the node of our linked list
+   class Node // a nested class will be the node of our linked list
    {
-      String data; // the node holds whatever data you want, for this example we are using a single string
+      String data; // the node holds whatever data you want, for this example we are using a string
       
-      Node next = null; // this is singly linked list so we only keep reference of the next node
+      Node next = null; // this node is for a singly linked list so we only keep reference of the next node
       
       Node(String data) // a constructor that initilizes whatever data you have in the node
       {
@@ -53,22 +53,22 @@ public class LinkedListStack
    /* adds a node to the beginning of the linked list */
    public void push(String data)
    {
-      Node newNode = new Node(data);
-      newNode.next = head;
-      head = newNode;
+      Node newNode = new Node(data); // create a new node with the given data
+      newNode.next = head; // the node (or lack of node) that is currently at the head will be pushed back by the new node
+      head = newNode; // override the head since our new node now links to the previous head
    }
    
    
    /* removes a node from the beginning of the linked list and returns the data it held */
    public String pop()
    {
-      if (head == null)
+      if (head == null) // check if the head exist before trying to access its data
       {
          return null;
       }
       
-      String data = head.data;
-      head = head.next;
+      String data = head.data; // get the data from the head node before we loose access to it
+      head = head.next; // remove the current head node by setting the node that comes after the head as our new head
       return data;
    }
    
