@@ -44,7 +44,7 @@ public class ArrayQueue
          front = array.length - 1;
       }
       
-      // the following 3 statements can be shortened a single statement 'return array[front--];'
+      // the following 3 statements can be shortened into a single statement 'return array[front--];'
       
       char c = array[front];
       front--; // decrementing the front index frees up space in the array, basically deletes the element
