@@ -1,11 +1,13 @@
+// this example creates Thread objects as 'anonymous objects' for simplicity
+// otherwise you must create a seperate class that implements Runnable which will act as your Thread object
 public class ThreadSync
 {
-   public static class SyncObject // this class will hold shared memory that multiple threads want to access
+   public static class SyncObject // this nested class will hold shared memory that multiple threads want to access
    {
       public final int numThreads; // we don't plan to change this variable, so multiple threads can read from it safely
       
       public int counter = 0; // this variable will be changed by several threads
-                              // therefore we need to worry about 'race condition'
+                              // therefore we need to worry about 'race conditions'
                               // in which several threads might try to change the variable while others are reading it
       
       SyncObject(int numThreads)
@@ -24,9 +26,9 @@ public class ThreadSync
       {
          final int threadIndex = i; // we cannot reference local variable i inside the anonymous object below
                                     // therefore we have to create a final or final-ish variable
-                                    // object references like sync can be referenced without issues
+                                    // object references like sync can be referenced without issue
          
-         threads[i] = new Thread() // this is called an anonymous object, basically we call a constructor while also
+         threads[i] = new Thread() // this is called an 'anonymous object', basically we call a constructor while also
          {                         // defining methods and variables inside that object
             
             @Override public void run() // the run() method is the start method for every thread
@@ -47,7 +49,7 @@ public class ThreadSync
                   {
                      System.out.println("All threads will be notified");
                      
-                     sync.notifyAll(); // this methods unblocks all threads that have called sync.wait()
+                     sync.notifyAll(); // this method unblocks all threads that have called sync.wait()
                   }
                   else
                   {
